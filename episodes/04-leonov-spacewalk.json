@@ -1,0 +1,80 @@
+{
+  "order": 4,
+  "id": "04-leonov-spacewalk",
+  "title": "The First Spacewalk Almost Killed Him #Shorts",
+  "category": "Space Age",
+  "hook": {
+    "narration": "In nineteen sixty-five, the first man to walk in space almost couldn't get back inside.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A Soviet cosmonaut in a white spacesuit floating outside a small capsule with the Earth glowing below"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "Alexei Leonov stepped out of Voskhod 2 and floated for about twelve minutes.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A Soviet capsule with an airlock tube extended, a cosmonaut emerging into space, blue Earth curving beneath"
+        },
+        {
+          "kind": "card",
+          "text": "12 minutes",
+          "sub": "outside the spacecraft"
+        }
+      ]
+    },
+    {
+      "narration": "But in the vacuum, his spacesuit inflated like a balloon, stiffening until he couldn't fit back through the airlock.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A cosmonaut's spacesuit swollen like a balloon, gloves stretched stiff, fingers pulled out of the gloves, tense close-up"
+        },
+        {
+          "kind": "image",
+          "prompt": "The narrow airlock opening seen from outside, too small for the bulging suit"
+        }
+      ]
+    },
+    {
+      "narration": "With his heart racing, he did something forbidden: he opened a valve and let air out of his own suit.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A cosmonaut's gloved hand on a suit valve, tiny crystals of escaping air glittering in sunlight"
+        },
+        {
+          "kind": "image",
+          "prompt": "Extreme close-up of a sweating cosmonaut's face behind the visor, eyes wide"
+        }
+      ]
+    },
+    {
+      "narration": "Then he squeezed back in, head first. It worked, barely.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A cosmonaut sliding headfirst into a spacecraft airlock, Earth glowing behind, relief and exhaustion"
+        }
+      ]
+    }
+  ],
+  "description": "Alexei Leonov made history as the first person to walk in space, and nearly didn't survive it. #Shorts #History #SpaceRace",
+  "tags": [
+    "alexei leonov",
+    "first spacewalk",
+    "voskhod 2",
+    "space race",
+    "soviet space program",
+    "1965",
+    "cosmonaut"
+  ],
+  "thumbnail": {
+    "text": "Stuck in space",
+    "prompt": "A cosmonaut in a ballooned white spacesuit outside a capsule, Earth below, dramatic rim light"
+  }
+}

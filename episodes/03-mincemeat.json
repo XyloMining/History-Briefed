@@ -1,0 +1,83 @@
+{
+  "order": 3,
+  "id": "03-mincemeat",
+  "title": "The Dead Man Who Fooled Hitler #Shorts",
+  "category": "Military",
+  "hook": {
+    "narration": "In nineteen forty-three, Britain fooled Hitler with a dead man.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A lone briefcase chained to a wrist washing up on a misty Spanish beach at dawn, 1943"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "The Allies planned to invade Sicily, and everyone expected it.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A 1943 war room with officers around a table map of the Mediterranean, cigarette smoke, dim lamps"
+        },
+        {
+          "kind": "image",
+          "prompt": "Allied landing craft silhouettes on a dark Mediterranean sea"
+        }
+      ]
+    },
+    {
+      "narration": "So British intelligence found a body, gave him a fake identity, Major William Martin, and chained a briefcase of forged papers to him.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Two British intelligence officers in a dim London office forging documents under a desk lamp, 1943"
+        },
+        {
+          "kind": "image",
+          "prompt": "A leather briefcase with a chain and a forged identity card on a wooden table, noir lighting"
+        }
+      ]
+    },
+    {
+      "narration": "The papers pointed to an invasion of Greece. The body was set adrift off Spain, where German agents got hold of the documents.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A submarine surfacing at night near the Spanish coast, a figure lowering a bundle into the waves"
+        },
+        {
+          "kind": "image",
+          "prompt": "German officers reading secret papers in a candlelit room, tense expressions"
+        }
+      ]
+    },
+    {
+      "narration": "Germany shifted troops away from Sicily. The Allies landed there with less resistance than they feared.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "German troop columns marching toward Greece along a mountain road, 1943"
+        },
+        {
+          "kind": "image",
+          "prompt": "Allied soldiers wading ashore on a Sicilian beach at dawn"
+        }
+      ]
+    }
+  ],
+  "description": "Operation Mincemeat was one of the strangest deceptions of World War II: a corpse, a fake identity and a briefcase of forged papers. #Shorts #History #WW2",
+  "tags": [
+    "operation mincemeat",
+    "ww2",
+    "world war 2",
+    "british intelligence",
+    "sicily 1943",
+    "spy history",
+    "military deception"
+  ],
+  "thumbnail": {
+    "text": "The man who never was",
+    "prompt": "A briefcase chained to a wrist on a foggy beach at dawn, cinematic, 1943"
+  }
+}

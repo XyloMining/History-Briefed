@@ -1,0 +1,80 @@
+{
+  "order": 9,
+  "id": "09-wow-signal",
+  "title": "The Signal From Space Nobody Has Heard Since #Shorts",
+  "category": "Space Age",
+  "hook": {
+    "narration": "In nineteen seventy-seven, a radio telescope heard a signal from space, and it has never been heard again.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A huge radio telescope dish under a star-filled night sky in Ohio, faint green aurora, 1977"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "On fifteenth August, nineteen seventy-seven, Ohio State's Big Ear radio telescope was scanning the sky for signs of alien life.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A huge flat radio telescope in an open field at night, beneath the Milky Way"
+        },
+        {
+          "kind": "image",
+          "prompt": "Hands of a 1970s astronomer adjusting dials in a control room full of computers"
+        }
+      ]
+    },
+    {
+      "narration": "Days later, volunteer astronomer Jerry Ehman was reading the printouts when he found a burst far stronger than the usual noise. He circled it and wrote one word beside it: Wow!",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A 1970s computer printout with columns of numbers, one line circled in red ink, close-up, desk lamp"
+        },
+        {
+          "kind": "image",
+          "prompt": "A red pen writing a single word in the margin of a printout"
+        }
+      ]
+    },
+    {
+      "narration": "The signal lasted seventy-two seconds, the full time the telescope could watch that patch of sky, and it came from the direction of Sagittarius.",
+      "visuals": [
+        {
+          "kind": "card",
+          "text": "72 seconds",
+          "sub": "the signal lasted"
+        },
+        {
+          "kind": "image",
+          "prompt": "A starry sky centred on the constellation Sagittarius, glowing galactic core"
+        }
+      ]
+    },
+    {
+      "narration": "Astronomers searched that spot again and again. Nothing. Its source is still unexplained.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Radio telescope dishes aimed at a dark sky, long exposure star trails, silence and mystery"
+        }
+      ]
+    }
+  ],
+  "description": "In 1977, a radio telescope in Ohio picked up a strong signal that has never been heard again. Here is the story of the Wow! signal. #Shorts #History #Space",
+  "tags": [
+    "wow signal",
+    "wow! signal",
+    "big ear",
+    "seti",
+    "1977",
+    "jerry ehman",
+    "radio astronomy"
+  ],
+  "thumbnail": {
+    "text": "Wow!",
+    "prompt": "A computer printout with one line circled in red under a starry sky, mysterious glow"
+  }
+}

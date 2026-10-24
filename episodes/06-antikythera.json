@@ -1,0 +1,76 @@
+{
+  "order": 6,
+  "id": "06-antikythera",
+  "title": "The 2,000-Year-Old Computer #Shorts",
+  "category": "Ancient",
+  "hook": {
+    "narration": "In nineteen oh one, divers pulled a two-thousand-year-old computer from the sea.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A corroded bronze gear mechanism glowing faintly underwater among ancient shipwreck debris"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "Sponge divers exploring a shipwreck near the Greek island of Antikythera found a corroded lump of bronze.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Early twentieth century sponge divers in heavy brass helmets descending beside a wooden boat off a rocky Greek island"
+        },
+        {
+          "kind": "image",
+          "prompt": "A diver's hand lifting a green corroded lump of bronze from the seabed"
+        }
+      ]
+    },
+    {
+      "narration": "Inside were dozens of precisely cut gears.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Macro shot of tiny ancient bronze gears with fine triangular teeth, green patina, museum light"
+        }
+      ]
+    },
+    {
+      "narration": "Researchers later worked out that it modelled the movements of the sun and moon, and predicted eclipses.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "An ancient Greek astronomer turning a bronze dial beside a model of the sun and moon, warm lamplight"
+        },
+        {
+          "kind": "image",
+          "prompt": "A total solar eclipse over an ancient Greek coastline"
+        }
+      ]
+    },
+    {
+      "narration": "Nothing this complex is known again for over a thousand years.",
+      "visuals": [
+        {
+          "kind": "card",
+          "text": "1,000+ years",
+          "sub": "before anything comparable appears"
+        }
+      ]
+    }
+  ],
+  "description": "The Antikythera Mechanism is an ancient Greek device that tracked the heavens with gears. Here is how it was found. #Shorts #History #AncientGreece",
+  "tags": [
+    "antikythera mechanism",
+    "ancient greece",
+    "ancient technology",
+    "shipwreck",
+    "archaeology",
+    "ancient history",
+    "mystery"
+  ],
+  "thumbnail": {
+    "text": "Ancient computer",
+    "prompt": "Bronze gears of an ancient mechanism glowing against dark water, mysterious"
+  }
+}

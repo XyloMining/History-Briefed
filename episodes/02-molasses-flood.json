@@ -1,0 +1,79 @@
+{
+  "order": 2,
+  "id": "02-molasses-flood",
+  "title": "The Day a Wave of Molasses Hit Boston #Shorts",
+  "category": "Industrial",
+  "hook": {
+    "narration": "In nineteen nineteen, a wave of molasses killed twenty-one people in Boston.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A towering dark wave of molasses surging down a snowy 1919 Boston street between brick buildings"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "It was a mild January afternoon when a giant storage tank in the North End split open.",
+      "visuals": [
+        {
+          "kind": "card",
+          "text": "1919",
+          "sub": "Boston, January 15"
+        },
+        {
+          "kind": "image",
+          "prompt": "A huge riveted industrial molasses tank beside the Boston harbour, early 1919, overcast sky"
+        }
+      ]
+    },
+    {
+      "narration": "More than two million gallons burst out in a wave about twenty-five feet high, racing along at roughly thirty-five miles an hour.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "The riveted tank bursting apart with a wall of dark syrup rushing outward, 1919 street, motion blur"
+        },
+        {
+          "kind": "image",
+          "prompt": "Terrified people and horses fleeing along a Boston street as a brown wave closes in"
+        }
+      ]
+    },
+    {
+      "narration": "It crushed buildings, buckled the elevated railway, and trapped people in thick, sticky syrup. Twenty-one people died.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A wrecked brick building and a twisted elevated railway structure coated in thick molasses, rescuers wading through it"
+        },
+        {
+          "kind": "image",
+          "prompt": "Rescue workers in 1919 coats pulling a survivor from knee-deep syrup"
+        }
+      ]
+    },
+    {
+      "narration": "The company blamed anarchists. A court blamed the company.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A stern 1920s courtroom with a judge and lawyers, lamplight, a model of a tank on the table"
+        }
+      ]
+    }
+  ],
+  "description": "The Great Molasses Flood of 1919 sent a deadly wave of syrup through Boston's North End. Here is what happened, and who was really to blame. #Shorts #History",
+  "tags": [
+    "great molasses flood",
+    "boston 1919",
+    "industrial history",
+    "disaster history",
+    "weird history",
+    "american history"
+  ],
+  "thumbnail": {
+    "text": "21 dead. Molasses.",
+    "prompt": "A dark glossy wave of molasses engulfing a 1919 Boston street, dramatic sepia and blue tones"
+  }
+}

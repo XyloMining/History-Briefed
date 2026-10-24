@@ -1,1 +1,79 @@
-
+{
+  "order": 1,
+  "id": "01-emu-war",
+  "title": "The Day the Army Lost a War to Birds #Shorts",
+  "category": "Military",
+  "hook": {
+    "narration": "In nineteen thirty-two, the Australian army went to war with birds... and lost.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A line of 1930s Australian soldiers with a mounted machine gun facing an enormous flock of emus across a dusty wheat field at dawn"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "After World War One, veterans were farming wheat in Western Australia. Then around twenty thousand emus arrived, flattening fences and wrecking crops.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A weary 1930s Western Australian wheat farmer standing in a flattened field, red dust, long shadows"
+        },
+        {
+          "kind": "image",
+          "prompt": "Thousands of emus sweeping across a broken fence line toward golden wheat, wide cinematic shot"
+        }
+      ]
+    },
+    {
+      "narration": "Desperate farmers asked the government for help. Soldiers turned up with machine guns, expecting an easy job.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Farmers in work clothes pleading with an army officer beside a dusty truck, 1932"
+        },
+        {
+          "kind": "image",
+          "prompt": "Soldiers unloading Lewis machine guns from a truck in the Australian outback"
+        }
+      ]
+    },
+    {
+      "narration": "But emus scatter into small, fast groups, and bullets barely slowed them down. Guns jammed, birds ran, and the crops kept vanishing.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Emus scattering in every direction across red earth as soldiers chase on a truck, dust clouds"
+        },
+        {
+          "kind": "image",
+          "prompt": "A close dramatic shot of a lone emu sprinting past a jammed machine gun"
+        }
+      ]
+    },
+    {
+      "narration": "Within weeks, the soldiers withdrew. The emus were still there.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A military truck driving away at sunset while a line of emus watches from the ridge"
+        }
+      ]
+    }
+  ],
+  "description": "In 1932, soldiers armed with machine guns were sent to fight a flock of emus in Western Australia. Find out how the Great Emu War went so wrong. #Shorts #History #Australia",
+  "tags": [
+    "emu war",
+    "great emu war",
+    "1932",
+    "western australia",
+    "australian history",
+    "military history",
+    "funny history"
+  ],
+  "thumbnail": {
+    "text": "Army vs Emus",
+    "prompt": "A single huge emu staring down a line of 1930s soldiers with a machine gun, dramatic backlight, dust"
+  }
+}

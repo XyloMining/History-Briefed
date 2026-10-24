@@ -1,0 +1,79 @@
+{
+  "order": 7,
+  "id": "07-great-stink",
+  "title": "The Summer London Almost Fled Parliament #Shorts",
+  "category": "Industrial",
+  "hook": {
+    "narration": "In eighteen fifty-eight, London smelled so bad that Parliament nearly fled.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "The Houses of Parliament beside a sickly green fog rising from the Thames, Victorian London, 1858"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "Raw sewage had poured into the Thames for years, and a hot summer cooked it.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A foul brown River Thames at low tide with sludge along the banks under a blazing hot sun, Victorian boats"
+        },
+        {
+          "kind": "image",
+          "prompt": "Victorian Londoners covering their noses with handkerchiefs on a bridge"
+        }
+      ]
+    },
+    {
+      "narration": "Officials hung chemical-soaked curtains over the windows of Parliament. People believed bad air caused disease, so panic spread.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Tall Victorian Parliament windows hung with heavy white curtains soaked in chemicals, men in frock coats coughing"
+        },
+        {
+          "kind": "image",
+          "prompt": "A worried crowd gathered near a Victorian doctor's notice about disease, gaslight"
+        }
+      ]
+    },
+    {
+      "narration": "Within weeks, Parliament approved a huge sewer project led by engineer Joseph Bazalgette.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A Victorian engineer unrolling large sewer blueprints on a drafting table, brass instruments, candlelight"
+        },
+        {
+          "kind": "image",
+          "prompt": "Politicians in a packed Victorian House of Commons raising hands in a vote"
+        }
+      ]
+    },
+    {
+      "narration": "His tunnels still carry London's waste today.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A vast arched Victorian brick sewer tunnel stretching into darkness, water gleaming"
+        }
+      ]
+    }
+  ],
+  "description": "The Great Stink of 1858 forced London to build a new sewer system. Here is how a smell changed a city. #Shorts #History #London",
+  "tags": [
+    "great stink",
+    "london 1858",
+    "joseph bazalgette",
+    "victorian london",
+    "industrial revolution",
+    "sewers",
+    "british history"
+  ],
+  "thumbnail": {
+    "text": "The Great Stink",
+    "prompt": "Westminster and the Thames under a sickly green haze at dusk, Victorian London, dramatic"
+  }
+}

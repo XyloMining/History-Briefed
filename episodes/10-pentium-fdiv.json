@@ -1,0 +1,80 @@
+{
+  "order": 10,
+  "id": "10-pentium-fdiv",
+  "title": "The Math Error That Cost Intel Millions #Shorts",
+  "category": "Digital",
+  "hook": {
+    "narration": "In nineteen ninety-four, a tiny math error cost Intel hundreds of millions of dollars.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A glowing computer processor chip cracked down the middle on a dark workbench, 1990s"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "A professor, Thomas Nicely, noticed that Pentium chips sometimes gave wrong answers to certain division problems.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A 1990s mathematics professor at a beige desktop PC comparing two printouts of numbers, puzzled"
+        },
+        {
+          "kind": "image",
+          "prompt": "A whiteboard filled with long division and one number circled"
+        }
+      ]
+    },
+    {
+      "narration": "Intel said the error was rare and most users would never see it.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A 1990s corporate press conference with a spokesperson at a podium and camera flashes"
+        }
+      ]
+    },
+    {
+      "narration": "Customers and the press weren't convinced, and IBM halted shipments of its Pentium computers.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Frustrated 1990s customers holding beige computers and newspaper headlines about a chip flaw"
+        },
+        {
+          "kind": "image",
+          "prompt": "A warehouse of boxed beige IBM computers stacked and shipment stopped, dim light"
+        }
+      ]
+    },
+    {
+      "narration": "Finally, Intel offered to replace every affected chip, at a cost of about four hundred seventy-five million dollars.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A technician replacing a processor chip in a beige 1990s PC under bright light"
+        },
+        {
+          "kind": "card",
+          "text": "$475M",
+          "sub": "the cost of the recall"
+        }
+      ]
+    }
+  ],
+  "description": "The Pentium FDIV bug of 1994 started with a professor's odd result and ended with a huge recall. #Shorts #History #Tech",
+  "tags": [
+    "pentium bug",
+    "fdiv bug",
+    "intel",
+    "1994",
+    "computer history",
+    "tech history",
+    "cpu"
+  ],
+  "thumbnail": {
+    "text": "$475 million bug",
+    "prompt": "A cracked glowing processor chip on a dark circuit board, 1990s beige PC in background"
+  }
+}

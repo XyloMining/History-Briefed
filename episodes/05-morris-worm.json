@@ -1,0 +1,76 @@
+{
+  "order": 5,
+  "id": "05-morris-worm",
+  "title": "The Student Who Broke the Early Internet #Shorts",
+  "category": "Digital",
+  "hook": {
+    "narration": "In nineteen eighty-eight, one student's experiment slowed down the early internet.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A 1980s university computer lab at night, green terminal screens glowing, code rippling across every monitor"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "A Cornell graduate student, Robert Morris, released a program meant to quietly spread from computer to computer.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A young 1980s graduate student typing at a beige terminal in a dark lab, green text reflected on his glasses"
+        },
+        {
+          "kind": "image",
+          "prompt": "A map of connected university computers drawn as glowing nodes, 1988 aesthetic"
+        }
+      ]
+    },
+    {
+      "narration": "A flaw made it copy itself again and again, clogging machines until they crawled.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A 1980s minicomputer with its cooling fans spinning hard and a screen flooded with repeating process lines"
+        },
+        {
+          "kind": "image",
+          "prompt": "Network nodes turning red one by one across a dark map"
+        }
+      ]
+    },
+    {
+      "narration": "An estimated ten percent of the internet's computers were hit.",
+      "visuals": [
+        {
+          "kind": "card",
+          "text": "10%",
+          "sub": "of the early internet affected, by common estimates"
+        }
+      ]
+    },
+    {
+      "narration": "Morris became the first person convicted under the US Computer Fraud and Abuse Act.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A 1990 American courthouse exterior with stone columns at dusk, a lone figure climbing the steps"
+        }
+      ]
+    }
+  ],
+  "description": "The Morris Worm of 1988 was one of the first major internet attacks, and it began as an experiment. #Shorts #History #Cybersecurity",
+  "tags": [
+    "morris worm",
+    "1988",
+    "internet history",
+    "computer history",
+    "cybersecurity history",
+    "robert morris",
+    "first computer worm"
+  ],
+  "thumbnail": {
+    "text": "The first worm",
+    "prompt": "A glowing green terminal with code spreading like a virus across a dark 1980s computer lab"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "order": 8,
+  "id": "08-petrov",
+  "title": "The Man Who Didn't Press the Button #Shorts",
+  "category": "Military",
+  "hook": {
+    "narration": "In nineteen eighty-three, one man's gut feeling may have stopped a nuclear war.",
+    "visuals": [
+      {
+        "kind": "image",
+        "prompt": "A Soviet officer in a dim bunker staring at a glowing red warning console, 1983"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "narration": "Soviet officer Stanislav Petrov was on duty when the early-warning system reported an American missile launch. Then more.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A Soviet command bunker with red lights flashing and a large illuminated map panel, officer in uniform at the desk"
+        },
+        {
+          "kind": "image",
+          "prompt": "A glowing red alert screen showing the word ALARM in Cyrillic style, tense atmosphere"
+        }
+      ]
+    },
+    {
+      "narration": "Protocol said to report it up the chain. He didn't.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "A hand hovering over a heavy beige Soviet telephone on a desk, shadows, hesitation"
+        }
+      ]
+    },
+    {
+      "narration": "It seemed strange that the US would attack with so few missiles, and he trusted that instinct.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Close-up of a tired officer's face lit red, thinking hard, sweat on his brow"
+        },
+        {
+          "kind": "card",
+          "text": "5",
+          "sub": "missiles reported, a strangely small attack"
+        }
+      ]
+    },
+    {
+      "narration": "He was right. The system had mistaken sunlight reflecting off clouds for missiles.",
+      "visuals": [
+        {
+          "kind": "image",
+          "prompt": "Sunlight glinting off high altitude clouds seen from a satellite's view of Earth, golden light on white cloud tops"
+        },
+        {
+          "kind": "image",
+          "prompt": "The same officer exhaling with relief as the red lights fade to calm blue"
+        }
+      ]
+    }
+  ],
+  "description": "In 1983, a Soviet officer judged a missile alert to be a false alarm. This is the story of Stanislav Petrov. #Shorts #History #ColdWar",
+  "tags": [
+    "stanislav petrov",
+    "cold war",
+    "1983",
+    "nuclear history",
+    "false alarm",
+    "soviet union",
+    "oko"
+  ],
+  "thumbnail": {
+    "text": "He said no",
+    "prompt": "A Soviet officer lit by red alarm lights in a dark bunker, tense, cinematic"
+  }
+}
