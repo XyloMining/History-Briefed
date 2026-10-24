@@ -1,0 +1,70 @@
+channel: History Briefed
+timezone: Australia/Sydney
+
+# Posting rhythm. Episodes are slotted in "order" onto the next free Mon/Wed/Fri slot.
+schedule:
+  start_date: "2026-11-02"
+  weekdays: [mon, wed, fri]
+  time: "16:00"
+
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  min_seconds: 20        # hard floor requested for every Short
+  max_seconds: 90
+  crf: 19
+  crossfade: 0.35        # seconds of dissolve between shots
+  zoom: 0.12             # Ken Burns travel (12%)
+  vignette: 0.55
+  grain: 0.03
+  tail_seconds: 0.5      # hold after the last word
+
+# Narration. Kokoro runs offline; "silent" produces a timing-only track for dry runs.
+tts:
+  backend: auto          # auto | kokoro | silent
+  voice: bm_george       # confirm against your voiceover with: python -m history_briefed compare-voices
+  lang: en-gb
+  speed: 1.0
+  pause_comma: 0.12
+  pause_end: 0.30
+  scene_gap: 0.22
+  words_per_second_fallback: 2.5
+  model_dir: models
+  master: "loudnorm=I=-16:TP=-1.5:LRA=11"
+  music: ""              # optional path to a looping music bed
+  music_volume: 0.10
+
+visuals:
+  provider: auto         # auto | gemini | placeholder
+  gemini_model: gemini-2.5-flash-image
+  cache_dir: cache/images
+  style_prefix: >-
+    Cinematic dark documentary still, dramatic low-key lighting, painterly photorealism,
+    moody deep blue and warm amber palette, atmospheric haze, fine film grain,
+    vertical 9:16 composition, no text, no watermark, no logos.
+
+# Your channel shows no burned-in captions in the sample video, so they are off by default.
+# An .srt is always written for YouTube's caption upload.
+captions:
+  burn_in: false
+  srt: true
+  words_per_group: 4
+  font_size: 72
+  y: 1480
+
+# Fixed sign-off. The iconic image appears when the second line starts.
+outro:
+  subscribe_line: "Subscribe for more stories like this, and comment what I should brief next."
+  brand_line: "History doesn't disappear... it just gets briefed."
+  image: assets/unique_outro_vertical.png
+  image_horizontal: assets/unique_outro_horizontal.png
+
+thumbnail:
+  font_path: ""          # optional .ttf (a serif such as EB Garamond or Cinzel suits the brand)
+  color: "#C9A86A"
+
+publish:
+  # Buffer needs a public URL per video. The workflow commits renders to videos/ and
+  # the queue manifest points at the raw GitHub URL below.
+  raw_base: "https://raw.githubusercontent.com/XyloMining/History-Briefed/main/videos"
