@@ -36,7 +36,7 @@ tts:
   music_volume: 0.10
 
 visuals:
-  provider: auto         # auto | gemini | placeholder
+  provider: pollinations  # pollinations (free, no key) | cloudflare (free account) | gemini (paid) | placeholder
   gemini_model: gemini-2.5-flash-image
   cache_dir: cache/images
   style_prefix: >-
