@@ -1,8 +1,11 @@
 """Shots: AI stills (Gemini) with a cached, offline-safe placeholder fallback; text cards for dates and figures."""
+import base64
 import hashlib
+import io
 import os
 import random
 import time
+import urllib.parse
 
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
 
@@ -19,8 +22,56 @@ def cover(im, w, h):
 def provider(cfg):
     p = cfg["visuals"]["provider"]
     if p == "auto":
-        return "gemini" if os.environ.get("GEMINI_API_KEY") else "placeholder"
+        if os.environ.get("CLOUDFLARE_API_TOKEN") and os.environ.get("CLOUDFLARE_ACCOUNT_ID"):
+            return "cloudflare"
+        return "gemini" if os.environ.get("GEMINI_API_KEY") else "pollinations"
     return p
+
+
+def _retry(label, fn, gap, attempts=6):
+    """Free services rate-limit hard, so wait and retry instead of failing the whole build."""
+    last = None
+    for n in range(attempts):
+        try:
+            im = fn()
+            time.sleep(gap)
+            return im
+        except Exception as e:  # noqa: BLE001
+            last = e
+            time.sleep(min(90, 10 * (n + 1)))
+    raise RuntimeError(f"{label} failed after {attempts} tries: {str(last)[:200]}")
+
+
+def _pollinations(cfg, prompt, seed):
+    import requests
+
+    v = cfg["visuals"]
+    url = ("https://image.pollinations.ai/prompt/" + urllib.parse.quote(prompt[:900]) +
+           f"?width={v.get('gen_width', 720)}&height={v.get('gen_height', 1280)}&model={v.get('pollinations_model', 'flux')}"
+           f"&nologo=true&seed={seed % 100000}")
+
+    def go():
+        r = requests.get(url, timeout=180)
+        r.raise_for_status()
+        if not r.headers.get("content-type", "").startswith("image"):
+            raise RuntimeError("not an image: " + r.text[:100])
+        return Image.open(io.BytesIO(r.content)).convert("RGB")
+
+    return _retry("Pollinations", go, float(v.get("request_gap_seconds", 6)))
+
+
+def _cloudflare(cfg, prompt, seed):
+    import requests
+
+    acct, tok = os.environ["CLOUDFLARE_ACCOUNT_ID"], os.environ["CLOUDFLARE_API_TOKEN"]
+    url = f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/@cf/black-forest-labs/flux-1-schnell"
+
+    def go():
+        r = requests.post(url, headers={"Authorization": f"Bearer {tok}"}, json={"prompt": prompt[:2000], "steps": 6}, timeout=180)
+        r.raise_for_status()
+        return Image.open(io.BytesIO(base64.b64decode(r.json()["result"]["image"]))).convert("RGB")
+
+    return _retry("Cloudflare Workers AI", go, float(cfg["visuals"].get("request_gap_seconds", 6)))
 
 
 def _gemini(cfg, prompt):
@@ -28,25 +79,20 @@ def _gemini(cfg, prompt):
     from google.genai import types
 
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-    last = None
-    for attempt in range(4):
-        try:
-            try:
-                conf = types.GenerateContentConfig(response_modalities=["IMAGE"],
-                                                   image_config=types.ImageConfig(aspect_ratio="9:16"))
-            except Exception:  # older SDKs have no image_config; the prompt already asks for 9:16
-                conf = types.GenerateContentConfig(response_modalities=["IMAGE"])
-            r = client.models.generate_content(model=cfg["visuals"]["gemini_model"], contents=[prompt], config=conf)
-            for part in r.candidates[0].content.parts:
-                if getattr(part, "inline_data", None) and part.inline_data.data:
-                    import io
 
-                    return Image.open(io.BytesIO(part.inline_data.data))
-            raise RuntimeError("no image returned")
-        except Exception as e:  # noqa: BLE001
-            last = e
-            time.sleep(2 ** attempt)
-    raise RuntimeError(f"Gemini image failed: {str(last)[:200]}")
+    def go():
+        try:
+            conf = types.GenerateContentConfig(response_modalities=["IMAGE"],
+                                               image_config=types.ImageConfig(aspect_ratio="9:16"))
+        except Exception:  # older SDKs have no image_config; the prompt already asks for 9:16
+            conf = types.GenerateContentConfig(response_modalities=["IMAGE"])
+        r = client.models.generate_content(model=cfg["visuals"]["gemini_model"], contents=[prompt], config=conf)
+        for part in r.candidates[0].content.parts:
+            if getattr(part, "inline_data", None) and part.inline_data.data:
+                return Image.open(io.BytesIO(part.inline_data.data))
+        raise RuntimeError("no image returned")
+
+    return _retry("Gemini", go, float(cfg["visuals"].get("request_gap_seconds", 8)))
 
 
 def _placeholder(w, h, seed, label=""):
@@ -99,8 +145,12 @@ def get_shot(cfg, shot, w, h):
     cached = cdir / f"{key}.png"
     if cached.exists():
         return cover(Image.open(cached), w, h)
-    if provider(cfg) == "gemini":
-        im = _gemini(cfg, prompt)
+    prov = provider(cfg)
+    if prov != "placeholder":
+        seed = int(key, 16)
+        fn = {"gemini": lambda: _gemini(cfg, prompt), "pollinations": lambda: _pollinations(cfg, prompt, seed),
+              "cloudflare": lambda: _cloudflare(cfg, prompt, seed)}[prov]
+        im = fn()
         im.convert("RGB").save(cached)
         return cover(im, w, h)
     return _placeholder(w, h, int(key, 16), shot["prompt"][:90])
