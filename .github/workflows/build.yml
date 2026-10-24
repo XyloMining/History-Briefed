@@ -1,1 +1,47 @@
+name: Build Shorts
 
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Episode ids to build (space separated). Leave empty to build all."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: System packages
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
+      - run: pip install -r requirements.txt
+      - name: Cache Kokoro model
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: kokoro-v1.0
+      - run: python -m history_briefed setup
+      - run: python -m history_briefed doctor
+      - name: Build
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "${{ inputs.ids }}" ]; then python -m history_briefed build --all;
+          else python -m history_briefed build ${{ inputs.ids }}; fi
+      - run: python -m history_briefed publish
+      - name: Commit renders (public URLs for Buffer)
+        run: |
+          git config user.name "history-briefed-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add videos
+          git diff --cached --quiet || git commit -m "Add rendered Shorts"
+          git push
