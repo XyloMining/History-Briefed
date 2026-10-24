@@ -1,0 +1,23 @@
+[
+  {
+    "order": 1,
+    "id": "01-emu-war",
+    "title": "The Day the Army Lost a War to Birds #Shorts",
+    "description": "In 1932, soldiers armed with machine guns were sent to fight a flock of emus in Western Australia. Find out how the Great Emu War went so wrong. #Shorts #History #Australia",
+    "tags": [
+      "emu war",
+      "great emu war",
+      "1932",
+      "western australia",
+      "australian history",
+      "military history",
+      "funny history"
+    ],
+    "seconds": 52.5,
+    "scheduled_local": "2026-11-02T16:00:00+11:00",
+    "scheduled_utc": "2026-11-02T05:00:00Z",
+    "video_url": "https://raw.githubusercontent.com/XyloMining/History-Briefed/main/videos/01-emu-war/video.mp4",
+    "thumbnail": "https://raw.githubusercontent.com/XyloMining/History-Briefed/main/videos/01-emu-war/thumbnail.png",
+    "captions": "https://raw.githubusercontent.com/XyloMining/History-Briefed/main/videos/01-emu-war/captions.srt"
+  }
+]
